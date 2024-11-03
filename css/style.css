@@ -76,6 +76,10 @@ img{
     .grid :nth-child(3n) {
         grid-column: 1 / span 2;
     }
+
+    img {
+        border-radius: unset;
+    }
 }
 
 @media (prefers-reduced-motion: reduce) {
