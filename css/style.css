@@ -25,7 +25,7 @@ li{
 
 img{
     border-radius: 35px;
-    height: 20vh;
+    height: 50vh;
     width: 100%;
     object-fit: cover;
   }
@@ -42,14 +42,19 @@ img{
 }
 
 .grid figure {
-    background-color: aqua;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.grid figure figcaption {
+    text-align: center;
 }
 
 @media screen and (min-width: 772px) {
     .grid {
         grid-template-columns: 1fr 1fr;
     }
-
     .grid figure {
         border-radius: 50%;
         width: 50%;
@@ -57,10 +62,6 @@ img{
         margin-right: auto;
         display: block;
         overflow: hidden;
-    }
-
-    .grid figure figcaption {
-        text-align: center;
     }
     .grid :last-child {
         grid-column: 1 / span 2;
@@ -70,6 +71,7 @@ img{
 @media screen and (min-width: 998px) {
     .grid figure {
         border-radius: 0px;
+        width: 75%;
     }
     
     .grid :nth-child(3n) {
@@ -85,8 +87,8 @@ img{
 
 @media (prefers-color-scheme: dark) {
     .grid figure {
-      background-color: #07391b; /* Dark background color */
-      color: #f0e68c; /* Light yellow-ish font color */
-      border: 2px solid black; /* Black border color */
+      background-color: #07391b;
+      color: #f0e68c;
+      border: 5px solid black;
     }
   }
